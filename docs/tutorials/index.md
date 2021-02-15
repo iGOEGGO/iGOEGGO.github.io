@@ -1,8 +1,8 @@
 
-# Tutorials for every technologist
+# Tutorials 
 
-Learn about all these great technologies:
+Die Tutorials zum iGÖGGO wurden in folgende Bereiche aufgeteilt: 
 
-[Tomcat](./tomcat/index.md)
-[Cloud](./cloud/index.md)
-[Java](./java/index.md)
++ [Deployment](./tutorials/deployment/index.md)
++ [Anwendung](./tutorials/app/index.md)
++ [Java](./tutorials/java/index.md)
