@@ -2,6 +2,9 @@
 
 **[HIER](https://github.com/iGOEGGO/diplomprojekt/blob/master/README.md) geht es zurück zum Haupt-README**
 
+Für das Deployment unserer Anwendung wird grundsätzlich `docker` verwendet und damit natürlich auch benötigt. 
+Für weitere Informationen zur Installation von `docker` folgen Sie bitte diesem Link: [link](https://docs.docker.com/engine/install/)
+
 ## Deployment 
 Der iGÖGGO kann local aufgesetzt werden, oder auf der Testplattform Heroku [4].
 
