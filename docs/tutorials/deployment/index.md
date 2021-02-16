@@ -1,7 +1,5 @@
 # R-Shiny Server mit docker
 
-**[HIER](https://github.com/iGOEGGO/diplomprojekt/blob/master/README.md) geht es zurück zum Haupt-README**
-
 Für das Deployment unserer Anwendung wird grundsätzlich `docker` verwendet und damit natürlich auch benötigt. 
 Für weitere Informationen zur Installation von `docker` folgen Sie bitte diesem Link: [link](https://docs.docker.com/engine/install/)
 
@@ -49,11 +47,12 @@ heroku container:release web --app <dein_app_name>
 
 Sollte man noch keine Heroku-App haben, muss man sie mit `heroku create <dein_app_name>` erstellt werden.
 
-**depracted**
+**genaue Durchführung mithilfe unseres Repos**
 
 ```shell
 cd deployment
-heroku login
+heroku login -i
+heroku container:login
 heroku create <app_name>
 heroku container:push web --app <app_name>
 heroku container:release web --app <app_name>
@@ -86,6 +85,8 @@ Möchte mann den Namen des docker-Images verändern müssen folgende zwei Zeilen
 docker build . -t <neuer_image_name>
 docker run -d -p 3456:3456 <neuer_image_name>
 ```
+
+
 
 ## Quellen und hilfreiche Links
 

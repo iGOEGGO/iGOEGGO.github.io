@@ -1,8 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 
-* [HOME](./)
-
+* [Startseite](./)
 * [Tutorials](./tutorials/index)
   * [Deployment](./tutorials/deployment/index)
   * [Anwendung](./tutorials/app/index)
@@ -10,9 +9,6 @@
     * [Exploration](./tutorials/app/exploration/index)
     * [Plotting](./tutorials/app/plotting/index)
     * [Clustering](./tutorials/app/clustering/index)
-  * [Java](./tutorials/java/index)
-
+* [Kontakt](./contact/index)
 * [About](./about/index)
-
-* [Contact](./contact/index)
 
