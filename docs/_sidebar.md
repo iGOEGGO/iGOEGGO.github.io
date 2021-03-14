@@ -9,6 +9,7 @@
     * [Exploration](./tutorials/app/exploration/index)
     * [Plotting](./tutorials/app/plotting/index)
     * [Clustering](./tutorials/app/clustering/index)
+  * [Fehler melden](./bug/index)
 * [Kontakt](./contact/index)
 * [About](./about/index)
 
