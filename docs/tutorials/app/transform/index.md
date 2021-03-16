@@ -57,7 +57,7 @@ Ihnen stehen mit dem iGÖGGO prinzipiell noch mehr `filter`-Möglichkeiten zur V
 
 ### Mutieren von Spalten
 
-Der iGÖGGO erlaubt es Ihnen neue Spalten anhand von vorhandenen zu erstellen. Ein Beispiel soll veranschaulichen: Der `mtcars` Datensatz hat eine Spalte `mpg` (Miles per Gallon, Meilen pro Gallone) . `mpg` erfasst für jede Spalte (jedes Automodell) wie viele Meilen (1.609km) pro Gallone (3.785l) gefahren werden können. Für Amerikaner mag dieses Maß aussagekräftig sein, Europäer verwenden jedoch meist l/100km. Durch die `mutate`-Operation kann man jedoch von `mpg` auf `l/100km` schließen.
+Der iGÖGGO erlaubt es Ihnen neue Spalten anhand von vorhandenen zu erstellen. Ein Beispiel soll veranschaulichen: Der `mtcars` Datensatz hat eine Spalte `mpg` (Miles per Gallon, Meilen pro Gallone) . `mpg` erfasst für jede Zeile (jedes Automodell) wie viele Meilen (1.609km) pro Gallone (3.785l) gefahren werden können. Für Amerikaner mag dieses Maß aussagekräftig sein, Europäer verwenden jedoch meist l/100km. Durch die `mutate`-Operation kann man jedoch von `mpg` auf `l/100km` schließen.
 
 Diese Problem lässt sich in einige kleinere Probleme zerlegen, diese sind
 
