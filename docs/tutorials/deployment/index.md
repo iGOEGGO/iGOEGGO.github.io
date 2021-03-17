@@ -8,7 +8,7 @@ Für das Deployment sind zwei Programme notwendig: Docker und Java.
 
 ### Docker
 
-Docker ist eine Virtualisierungssoftware, welche den iGÖGGO ausführt. Um es zu installieren ist folgende Befehle notwendig [9].
+Docker ist eine Virtualisierungssoftware, welche den iGÖGGO ausführt. Um es zu installieren sind folgende Befehle notwendig [9].
 
 ```shell
 apt-get install \
