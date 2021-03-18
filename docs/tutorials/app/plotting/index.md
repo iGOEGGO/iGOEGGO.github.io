@@ -1,5 +1,9 @@
 # Plotting
 
-Folgende Plots sind im Plotting-Teil unserer Applikation verfügbar: 
+Mit dem iGÖGGO kann man folgende Plots erstellen:
 
-* asdf
++ Scatterplot
++ Mosaicplot
++ Häufigkeiten
++ Lineplot
+
