@@ -30,15 +30,15 @@ Die Einstellungen des Scatterplots bieten Ihnen sehr viele Möglichkeiten:
 
 Seien Sie sich bitte bewusst, dass Sie nicht von all diesen Optionen Gebrauch machen müssen. Sie Laufen sonst Gefahr den Plot visuell zu überladen. Wenn Ihnen der iGÖGGO bei Form und Farbe keine Auswahl vorschlägt, dann hat er keien Spalte als kategoriale Spalte erkannt. Gehen Sie dann bitte zurück zum Tab `Transformation` und weisen der Spalte die korrekte Designation zu. 
 
- //TODO: GIF
+### ![Verteilungen](./img/scatter.gif)
+
+
 
 ### Häufigkeiten
 
 Der Häufigkeiten Plot ist der Weg, wie Sie ein klassisches Balkendiagramm erstellen können. Übergeben müssen Sie dieser Funktion eine Spalte mit den Kategorien und eine die entsprechenden assoziierten Werte beinhaltet. In den Einstellungen können Sie auswählen ob sie den Plot `absolut`, `relativ` oder `prozentuell` skaliert haben wollen. In den Einstellungen haben Sie desweiteren die Option die Häufigkeiten als Kreisdiagram darzustellen. Kreisdiagramme sind immer prozentuell skaliert. 
 
-//TODO: GIF
-
-
+![Verteilungen](./img/hauef.gif)
 
 ### Mosaicplot
 

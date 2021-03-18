@@ -27,7 +27,7 @@ Wichtig: Der iGÖGGO erlaubt es Ihnen verschiedene Datensätze zu vergleichen. E
 
 Standardmäßig ist im Dropdown Menü die erste numerische Spalte, die vom iGÖGGO erkannt wurde ausgewählt. Hat man die darzustellende Spalte ausgewählt, kann man durch klicken des Plot-Buttons den entsprechenden Plot erstellen.
 
-//Gif iGÖGGO
+![Verteilungen](./img/boxplot.gif)
 
 Auf Wunsch lässt sich eine Linie am Mittelwert einblenden. Hierfür einfach in den Controls das Häkchen "Linie am Mittelwert" setzten. 
 
@@ -43,6 +43,8 @@ Wie beim Boxplot auch, schlägt Ihnen der iGÖGGO nur numerische Spalten vor. Sc
 
 In den Histogram-Einstellungen können Sie über einen Slider die Anzahl der `bins` beeinflussen. Klicken Sie nochmals auf den `Plot` Button, damit Ihre Einstellungen übernommen werden. Bei Bedarf lässt sich eine Linie am Mittelwert einblenden.  Mit dem Histogram können Sie auf einen Blick erkennen, wie die Lage (= die Verteilung) Ihrer Daten ist. 
 
+![Verteilungen](./img/histogramm.gif)
+
 ### QQ-Plot
 
 Der QQ-Plot hat eine sehr spezielle Aufgabe. Bei einem Quantil-Quantil-Plot wird eine *echte* numerische Spalte gegen eine theoretische Verteilung geplottet. Zumeist ist die theoretische Verteilung eine Normalverteilung und man kann am QQ-Plot erkennen, ob die echte Spalte auch normalverteilt ist. Eine theoretische Verteilung und eine echte Spalte haben die gleiche Verteilung, wenn die Punkte des QQ-Plots perfekt auf der Diagonale des Plots liegen. 
@@ -53,13 +55,11 @@ Hört sich alles sehr kompliziert an, doch wie so oft kann eine simple Grafik al
 
 Im iGÖGGO lässt sich ein QQ-Plot wie unten gezeigt erstellen:
 
-//TODO: Gif
+### ![Verteilungen](./img/qq.gif)
 
 ### Ecdf
 
 Der ECDF ist eine kumulative Form des Histogram. Hier wird nicht pro Bereich betrachtet, wie viele Observationen in diesen Bereich fallen, sondern wie viele Teile der Observationen schon vor besagtem X-Wert waren. Daher ist die Skalierung des ECDF Plot auch anders als beim Histogramm: Die X-Achse ist von $x_{min} \space bis \space x_{max}$ skaliert, während die Y-Achse zwischen 0 und 1 verläuft. Die Erstellung eines ECDF-Plots funktioniert im iGÖGGO gleich wie die anderen Plot-Arten.
-
-
 
 ### Vierplot-Ansicht
 
