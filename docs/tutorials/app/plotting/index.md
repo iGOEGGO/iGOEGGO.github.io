@@ -52,3 +52,9 @@ Der Lineplot ist für zeitliche Abhängigkeiten ideal. Diese Funktion übernimmt
 
 Klassiche Beispiele für Lineplots sind Aktienpreise. 
 
+
+
+### Korrelogramm
+
+Das Korrelogramm ist ein großartiges Tool um schnell korrelierte Spalten im Datensatz zu finden. Erstellen Sie ein Korrelogramm indem Sie beliebig viele numerische Spalten. (der iGÖGGO bietet Ihnen bie diesem Feature nur numerische Spalten zur Auswahl an) hinzufügen und auf Plot klicken. Die Nummern welche erscheinen steht für den Pearson-Korrelationskoeffizient zwischen den entsprechenden Spalten. Es ist nicht sinnvoll mehr als 12 Werte zu betrachten, da der Plot sonst sehr unübersichtlich wird.
+

@@ -1,31 +1,31 @@
 # Exploration
 
-Der Teil unserer Applikation, der zur Exploration verwendet werden kann, beinhaltet folgende Funktionen, die es ermöglichen sich einen Überblick über einen etwaigen Datensatz zu verschaffen: 
+Der Teil unserer des iGÖGGO, der zur Exploration verwendet werden kann, beinhaltet folgende Funktionen, die es ermöglichen sich einen Überblick über einen Datensatz zu verschaffen: 
 
-* Boxplot
-* Histogramm
-* QQ-Plot
-* ECDF
+* Boxplot,
+* Histogramm,
+* QQ-Plot und
+* ECDF-Plot.
 
-Die Exploration soll dazu dienen, ein Gefühl für die Lage einer numerischen Spalte zu bekommen. Fragen wie: Sind meine Messungen normalverteilt oder sind Ausreißer vorhanden, lassen sich mit den unten angeführten Funktionen leicht beantworten.
+Die Exploration soll dazu dienen, ein Gefühl für die Lage einer numerischen Spalte zu bekommen. Fragen wie: "Sind meine Messungen normalverteilt?", oder: "Sind im Datensatz Ausreißer vorhanden", lassen sich mit den unten angeführten Funktionen leicht beantworten.
 
-Alle Funktionen befinden sich im `Exploration` Tab
+Alle nachfolgenden Funktionen befinden sich im `Exploration` Tab
 
 
 
 ### Boxplot
 
-Auf einem Boxplot sind bestimmte Dinge leicht ersichtlich: Beginnen tut er beim niedrigsten Wert der im Datensatz vorkommt. Dieser wird auf der horizontalen Achse aufgetragen und durch einen vertikalen Strich gekennzeichnet. Der nächste Wert stellt das erste Quartil (Q1) da. Das Q1 ist der Punkt, wo 25% der Messungen unter dem entsprechendem X-Wert liegen. Außerdem ist hier der Beginn der Box, die für den Boxplot namensgebend ist. Innerhalb der Box, nicht unbedingt in der Mitte, befindet sich ein vertikaler Strich, der die Box in zwei Teile trennt. Dieser Strich ist der Median. Im Bereich zwischen Q1 und dem Median liegen 25% der Messwerte, unter dem Median liegen 50% der Werte, über dem Median die andere Hälfte. Die Box endet beim Q3 und (75% Percentil) und der letzte Wert des Boxplots ist wiederum der höchste, der in der gesamten Spalte vorkommt. Sind Ausreißer vorhanden, dann beginnen und enden der Whisker (so werden die Linien links und rechts der Box auch genannt) nicht beim niedrigsten/höchsten Wert, sondern überlicherweise bei einer Distanz die der Boxbreite * 1.5 entspricht. 
+Auf einem Boxplot sind bestimmte Dinge leicht ersichtlich: Beginnen tut er beim niedrigsten Wert der im Datensatz vorkommt. Dieser wird auf der horizontalen Achse aufgetragen und durch einen vertikalen Strich gekennzeichnet. Der nächste Wert stellt das erste Quartil (Q1) da. Das Q1 ist der Punkt, wo 25% der Messungen unter dem entsprechendem X-Wert liegen. Außerdem ist hier der Beginn der Box, die für den Boxplot namensgebend ist. Innerhalb der Box, nicht unbedingt in der Mitte, befindet sich ein vertikaler Strich, der die Box in zwei Teile trennt. Dieser Strich ist der Median. Im Bereich zwischen Q1 und dem Median liegen 25% der Messwerte, unter dem Median liegen 50% der Werte, über dem Median die andere Hälfte. Die Box endet beim Q3 (75% Percentil) und der letzte Wert des Boxplots ist wiederum der höchste, der in der gesamten Spalte vorkommt. Sind Ausreißer vorhanden, dann beginnen und enden die Whisker (so werden die Linien links und rechts der Box auch genannt) nicht beim niedrigsten/höchsten Wert, sondern überlicherweise bei einer Distanz die der Boxbreite * 1.5 entspricht. 
 
 ![boxplot](./img/boxplot.jpg)
 
-Im iGÖGGO kann ein Boxplot ganz leicht erstellt werden, hierzu muss man auf den `Exploration` Tab gehen, und im Drop down die `Boxplot` Funktion auswählen. Mit dem `Add` Knopf kann man ein neues Boxplot Fenster hinzufügen.
+Im iGÖGGO kann ein Boxplot ganz leicht erstellt werden, hierzu muss man auf den `Exploration` Tab gehen und im Dropdown die `Boxplot` Funktion auswählen. Mit dem `Add` Knopf kann man ein neues Boxplot Fenster hinzufügen.
 
 In diesem Fenster lässt sich eine numerische Spalte des geladenen Datensatz auswählen. Wenn die Spalte nicht richtig erkannt wird, dann löschen Sie das Boxplot Fenster und weisen der Spalte unter dem Transformationstab den korrekten Datentypen zu.
 
-Wichtig: Der iGÖGGO erlaubt es Ihnen verschiedene Datensätze zu vergleichen. Es reicht daher nicht, wenn Sie nur den korrekten Datentyp im Transformation Tab zuweisen, da der iGÖGGO glaubt sie wollen einen Vergleich anstellen. Daher: Boxplot fenster löschen, Datentyp richtig zuweisen, neues Fenster erstellen und Boxplot plotten.
+**Wichtig**: Der iGÖGGO erlaubt es Ihnen verschiedene Datensätze zu vergleichen. Es reicht daher nicht, wenn Sie nur den korrekten Datentyp im Transformationstab zuweisen, da der iGÖGGO glaubt sie wollen einen Vergleich anstellen. Daher: Boxplot-Fenster löschen, Datentyp richtig zuweisen, neues Fenster erstellen und Boxplot plotten.
 
-Standardmäßig ist im Dropdown Menü die erste numerische Spalte, die vom iGÖGGO erkannt wurde ausgewählt. Hat man die darzustellende Spalte ausgewählt, kann man durch klicken des Plot-Buttons den entsprechenden Plot erstellen.
+Standardmäßig ist im Dropdown Menü die erste numerische Spalte, die vom iGÖGGO erkannt wurde ausgewählt. Hat man die darzustellende Spalte ausgewählt, kann man durch Klicken des Plot-Buttons den entsprechenden Plot erstellen.
 
 ![Verteilungen](./img/boxplot.gif)
 
@@ -35,7 +35,7 @@ Leider kann man am Boxplot nicht direkt erkennen, ob die numerische Spalte mehre
 
 
 
-### Histogram
+### Histogramm
 
 Im iGÖGGO lassen sich Histogramme kinderleicht erstellen. Bei einem Histogramm wird der Bereich zwischen dem höchsten und niedrigsten Wert der Spalte in `bins` verschiedene Teile geteilt. Die Höhe des Balkens in dem Bereich gibt Aufschluss darüber, wie viele Oberservationen in diesen Bereich fallen. Bei einer normalverteilten Spalte erwartet man sich, dass das Histogramm optische Ähnlichkeiten mit einer Glockenkurve aufweist. 
 
@@ -57,7 +57,7 @@ Im iGÖGGO lässt sich ein QQ-Plot wie unten gezeigt erstellen:
 
 ### ![Verteilungen](./img/qq.gif)
 
-### Ecdf
+### Ecdf-Plot
 
 Der ECDF ist eine kumulative Form des Histogram. Hier wird nicht pro Bereich betrachtet, wie viele Observationen in diesen Bereich fallen, sondern wie viele Teile der Observationen schon vor besagtem X-Wert waren. Daher ist die Skalierung des ECDF Plot auch anders als beim Histogramm: Die X-Achse ist von $x_{min} \space bis \space x_{max}$ skaliert, während die Y-Achse zwischen 0 und 1 verläuft. Die Erstellung eines ECDF-Plots funktioniert im iGÖGGO gleich wie die anderen Plot-Arten.
 

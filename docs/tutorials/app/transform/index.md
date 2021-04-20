@@ -19,9 +19,9 @@ Alle genannten Transformationen können auf dem Tab `Transformation` durchgefüh
 
 ###  Auswählen bestimmter Spalten
 
-Wenn nur bestimmte Spalten in der weiteren Analyse relevant sind, dann kann man diese mit der `select` Operation direkt auswählen. Prinzipiell ist bei dem Operations-Dropdown `select` zu wählen und dann in dem Textfeld die Spalten, durch `, (Beistrich)` getrennt anzugeben.
+Wenn nur bestimmte Spalten in der weiteren Analyse relevant sind, dann kann man diese mit der `select` Operation direkt auswählen. Dafür ist bei dem Operations-Dropdown `select` zu wählen und anschließend in dem Textfeld die Spalten, durch `, (Beistrich)` getrennt anzugeben.
 
-Anhand des Datensatz`mtcars` soll gezeigt werden wie man mit `select` die Spalten `mpg, cly und disp` auswählt. 
+Anhand des Datensatz `mtcars` soll gezeigt werden wie man mit `select` die Spalten `mpg, cly und disp` auswählt. 
 
 ![select](./../../../images/select.gif)
 
@@ -76,3 +76,12 @@ Der *Oneliner* geht wie folgt: `lp100km_one_line = 100/((mpg*1.609)/3.785)`. Alt
 ![mutateoneline](./../../../images/mutateoneline.gif)
 
 Die Möglichkeiten sind nicht auf eine Spalte beschränkt. Man könnte z.B. mit einem Datensatz der Gewicht und Körpergröße speichert dem BMI durch `mutate bmi = gewicht/koerpergroesse^2` berechnen. (Natürlich nur sofern `gewicht` in der Einheit kg und `koerpergroesse` in der Einheit m vorliegt. Wenn dem nicht so ist kann man durch den `mutate`-Befehl die entsprechenden Spalten jedoch ganz einfach hinzufügen). Auch mit "String" Spalten kann man Mutationen durchführen. Dies ist besonders praktisch wenn man konsolidierte Kategorien erreichen will. Der Absatz `Gruppieren und Zusammenfassen` wird von dieser Pratik gebrauch machen. 
+
+
+
+### Gruppieren und Zusammenfassen
+
+Gruppieren und Zusammenfassen (`group_by & summarise`) sind zwei Funktionen die fest miteinander verbunden sind. Der iGÖGGO erlaubt es Ihnen nicht `summarise` auszuführen, wenn Sie nicht zuvor `group_by` ausgeführt haben. Bei dem `group_by` Befehl können Sie beliebig viele kategoriale Spalten (Anm. aus Gründen der erleichterten Bedienung, können Sie auch numerische Spalten angeben, wobei dies nur sehr selten sinnvoll ist) angeben die gruppiert werden. Das gruppieren hat keinen direkten Effekt, daher ändert sich die Tabelle im ersten Schritt *nicht*. Nach dem gruppieren können Sie `summarise` aufrufen und wiederum beliebig viele Spalten (durchaus auch die Spalte nach der Sie gruppiert haben) angeben. Für numerische Spalten werden viele Metriken (je nach Gruppe) kalkuliert, für kategoriale Spalten wird jeweils nur die Anzahl `n` ausgegeben.
+
+`group_by` und `summarise` sollte nur verwendet werden, wenn Sie wissen was Sie tun. Für eine allgemeine Erklärung des Konzepts empfehle ich [diesen Artikel](https://mgimond.github.io/ES218/Week03ab_groupby.html)
+
