@@ -104,7 +104,7 @@ OpenJDK 64-Bit Server VM (build 11.0.10+9, mixed mode)
 sehen.
 
 ## Deployment 
-Der iGÖGGO kann lokal aufgesetzt werden, oder auf der Testplattform Heroku [4].
+Der iGÖGGO kann lokal aufgesetzt werden, oder auf der Testplattform Heroku [4]. Dazu ist unser GitHub-Repository zu clonen. Unter bestimmten Versionen von Linux kann es passieren, dass die `.sh`-Dateien beim Clonen ihre Berechtigungen verlieren. In diesem Fall kann man im `deployment`-Ordner den Befehl `sudo chmod +x *.sh` ausführen. Damit lassen sich alle Skripte ausführen.
 
 ### Lokales Deployment
 
@@ -129,7 +129,7 @@ Da ein einzelne Instanz des iGÖGGO nur von einer Benutzerin verwendet werden ka
 
  ![](img/docker_shinyproxy_loadbalance.png)
 
-Diese Funktionalität wird von ShinyProxy bereits zur Verfügung gestellt [7]. Wir stellen ein Skript zur Verfügung, welches ShinyProxy startet und dann über `http:localhost:8080` erreichbar ist.
+Diese Funktionalität wird von ShinyProxy bereits zur Verfügung gestellt [7]. Wir stellen ein Skript zur Verfügung, welches ShinyProxy startet und dann über `http://localhost:8080` erreichbar ist.
 
 ```shell
 sh deploylocalproxy.sh
@@ -148,6 +148,11 @@ users:
 ```
 
 Natürlich ist dies nicht die sicherste Methode, Nutzerdaten zu speichern. ShinyProxy ermöglicht es, sich über einen LDAP-Server zu authentifizieren, eine genaue Beschreibung kann der offiziellen Website entnommen werden [8].
+
+#### Initialisieren und Zurücksetzen der Bookmark-Datenbank
+
+Vor dem ersten Starten der Applikation mit ShinyProxy ist die `reset.sh` auszuführen. Sie erstellt eine Verzeichnisstruktur in `/var/lib/igoeggo`, welche die Bookmarks und die Bookmark-Datenbank enthält. Möchte man den Inhalt der Datenbank und die Bookmarks zurücksetzen, also **löschen**, kann diese Datei erneut ausgeführt werden.
+
 
 ### Cloud-Deployment mit Heroku
 
